@@ -1,5 +1,5 @@
 
-
+import React from 'react'
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{
     type?: 'submit' | 'reset' | 'button',
@@ -8,15 +8,15 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 }
 
 
-export const Button = ({type, children, className}: ButtonProps) => (
-    <button type={type} className={className}>
+export const Button = ({type, children, className, ...props}: ButtonProps) => (
+    <button type={type} className={className} {...props}>
         {children}
     </button>
 )
 
 
-export const IconButton = ({ children, className }: ButtonProps) => (
-    <button className={`${className} p-4`}>
+export const IconButton = ({ children, className, ...props }: ButtonProps) => (
+    <button className={`${className} p-4`} {...props}>
         {children}
     </button>
 )

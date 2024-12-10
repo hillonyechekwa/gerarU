@@ -36,10 +36,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} antialiased`}
+        className={`${poppins.className} antialiased flex flex-col`}
       >
         <Nav />
-        {children}
+        <main className="flex-1 min-h-28">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

@@ -10,7 +10,7 @@ import { faEnvelope, faLocationDot, faLocationPin, faPhone } from "@fortawesome/
 
 const Footer = () => {
     return (
-        <footer className="w-full h-screen flex flex-col items-center justify-evenly p-5 bg-stone-950 text-white">
+        <footer className="w-full h-screen flex flex-col items-center justify-evenly p-5 mt-[200px] bg-stone-950 text-white">
             <nav className="w-full p-3 flex justify-around items-start">
                 <dl className="flex flex-col gap-y-3">
                     <dt className="uppercase text-yellow-200 text-xl">Academics</dt>

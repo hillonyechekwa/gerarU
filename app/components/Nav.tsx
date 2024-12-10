@@ -17,7 +17,7 @@ const Nav = () => {
                 </li>
                 <li className="flex gap-x-5 items-center">
                     <Link href="#" className="text-xs ">Applicant portal</Link>
-                    <Button className="uppercase bg-orange-600 text-gray-200 text-xs font-semibold px-4 py-2" type="button">
+                    <Button className="uppercase bg-[rgba(243,110,53,1)] text-gray-200 text-xs font-semibold px-4 py-2" type="button">
                         Apply Now
                     </Button>
                 </li>
